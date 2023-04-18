@@ -1,14 +1,20 @@
 <?php
-$linha = readline();
-$val = explode('', $linha);
-$A = $val[0];
-$N = $val[1];
-
+$n = explode(' ', fgets(STDIN));
+$j = $n[0];
 $s = 0;
 
-for ($i = 0; $i < $N; $i++) {
-    $s += $A + $i;
+for($i = 1; true; $i++)  
+{
+ if ($n[$i] > 0) {
+    $k = $n[$i];
+    break;
+ }
 }
 
-echo "$s\n";
+for($i = 0; $i <= $k-1; $i++)
+{
+    $s += $j + $i;
+}
+
+echo $s."\n";
 ?>
